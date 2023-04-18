@@ -2,15 +2,9 @@
 name: release CI, CD workflow 
 on: 
   push:
-<<<<<<< HEAD:.github/workflows/master_ci_cd.yml
-    branches: [ "rick_morty"]
-  pull_request:
-    branches: [ "rick_morty"]
-=======
     branches: [ "release"]
   pull_request:
     branches: [ "release"]
->>>>>>> ad6cbc0fda7f2a1c2d42135847e0f2f83964c32f:.github/workflows/release_ci_cd.yml
 jobs:
   release_ci_cd:
     runs-on: ubuntu-latest
