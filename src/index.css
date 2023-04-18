@@ -134,14 +134,17 @@ body {
   cursor: pointer;
 }
 
-
 footer {
   background-color: #262d25;
   padding: 20px;
 }
 
-
-
+.image {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
 
 .container {
   color: #ffffff;

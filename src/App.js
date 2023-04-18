@@ -1,4 +1,5 @@
 import imageRickMorty from './img/rick-morty.png'
+import imageSpider from './img/credencial.jpg'
 import './App.css';
 import { useState } from 'react';
 import Characters from './components/Characters';
@@ -33,6 +34,7 @@ function App() {
         )}   
       </header>
       <footer>
+      <div>
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -46,12 +48,14 @@ function App() {
               <p>Enlaces útiles</p>
                 <ul>
                   <li><a href="https://github.com/CarlosArt17">GitHub</a></li>
-                  <li><a href="#">Correo: zs20006730@estudiantes.uv.mx</a></li>
+                  <li>Correo: zs20006730@estudiantes.uv.mx</li>
+                  <li><img src={imageSpider} alt="Descripción de la imagen" className='image'></img></li>
                 </ul>
             </div>
+            
           </div>
         </div>
-        
+      </div>
       </footer>
       
       
