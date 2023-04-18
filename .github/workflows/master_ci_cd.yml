@@ -2,9 +2,9 @@
 name: release CI, CD workflow 
 on: 
   push:
-    branches: [ "master"]
+    branches: [ "rick_morty"]
   pull_request:
-    branches: [ "master"]
+    branches: [ "rick_morty"]
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
       - name: npm install
         run: npm install
       #- name: Test
-       # run: |
+        # run: |
         #  npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
       - name: make .env 
         uses: SpicyPizza/create-envfile@v1.3
