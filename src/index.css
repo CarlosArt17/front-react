@@ -7,7 +7,7 @@ body {
 }
 
 .title {
-  color: #738f93;
+  color: #ffffff;
   font-size: 40px;
   font-family: fantasy, sans-serif;
   margin-bottom: 0;
@@ -55,7 +55,7 @@ body {
 
 .character-container {
   display: flex;
-  background: #3c3e44;
+  background: #239002;
   margin: 20px 10px;
   border-radius: 10px;
   align-items: flex-start;
@@ -117,14 +117,76 @@ body {
 }
 
 .text-grey {
-  color: #9e9e9e;
+  color: #f9f4f4;
 }
 
 .back-home {
-  text-decoration: underline;
+  background-color: #1ba94c;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgb(27 169 76 / 50%);
+  font-size: 18.005px;
+  padding-left: 1.528em;
+  padding-right: 1.528em;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 2.778em;
+  border: none;
   cursor: pointer;
-  font-size: 15px;
 }
+
+
+footer {
+  background-color: #262d25;
+  padding: 20px;
+}
+
+
+
+
+.container {
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: fantasy, sans-serif;
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  width: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
   .characters {
@@ -146,4 +208,6 @@ body {
   .character-container img {
     width: 150px;
   }
+
+  
 }

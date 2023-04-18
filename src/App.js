@@ -15,8 +15,9 @@ function App() {
 
   return (
     <div className="App">
+    
       <header className="App-header">
-        <h1 className='title'>Rick & Morty</h1>
+        <h1 className='title'>API Rick & Morty</h1>
         {characters ? (
           <Characters characters={characters} setCharacters={setCharacters} />
         ) : (
@@ -25,10 +26,36 @@ function App() {
             <button onClick={reqApi} className='btn-search'>
               Buscar Personajes
             </button>
+            <div id="search-form">
+
+            </div>
           </>
         )}   
       </header>
-    </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Hecha por:</p>
+                <p>Carlos Arturo Jose Fragoso</p>
+                <p>Matricula: S20006730</p>
+                <p>6° Semestre - Ingenieria de Software</p>
+                <p>Universidad Veracruzana</p>
+            </div>
+            <div class="col-md-6">
+              <p>Enlaces útiles</p>
+                <ul>
+                  <li><a href="https://github.com/CarlosArt17">GitHub</a></li>
+                  <li><a href="#">Correo: zs20006730@estudiantes.uv.mx</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+      
+      
+      </div>
   );
 }
 

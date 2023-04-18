@@ -21,12 +21,12 @@ export default function Characters(props) {
                                 {character.status === "Alive" ? (
                                 <>
                                     <span className="alive" />
-                                    Alive
+                                    Vivo
                                 </>
                                 ) : (
                                     <>
                                         <span className="dead" />
-                                        Dead
+                                        Muerto
                                     </>
                                 )}
                             </h6>
