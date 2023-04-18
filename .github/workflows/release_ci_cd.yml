@@ -2,9 +2,15 @@
 name: release CI, CD workflow 
 on: 
   push:
+<<<<<<< HEAD:.github/workflows/master_ci_cd.yml
+    branches: [ "rick_morty"]
+  pull_request:
+    branches: [ "rick_morty"]
+=======
     branches: [ "release"]
   pull_request:
     branches: [ "release"]
+>>>>>>> ad6cbc0fda7f2a1c2d42135847e0f2f83964c32f:.github/workflows/release_ci_cd.yml
 jobs:
   release_ci_cd:
     runs-on: ubuntu-latest
@@ -17,7 +23,7 @@ jobs:
       - name: npm install
         run: npm install
       #- name: Test
-       # run: |
+        # run: |
         #  npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
       - name: make .env 
         uses: SpicyPizza/create-envfile@v1.3
